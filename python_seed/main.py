@@ -19,7 +19,7 @@ def configure_logging():
 
 def main(args):
     configure_logging()
-    logging.info('Started runnning')
+    logger.info('Started runnning')
 
 
 if __name__ == '__main__':
