@@ -147,7 +147,7 @@ class DocStringChecker(BaseChecker):
     if node.display_type() == 'Module':
       return 0
     else:
-      return node.col_offset + 2
+      return node.col_offset + 4
 
   def _check_common(self, node, lines=None):
     """Common checks we enforce on all docstrings"""

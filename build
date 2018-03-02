@@ -28,4 +28,4 @@ pyflakes "${SOURCE_DIR}/" "${TEST_DIR}/"
 
 # Check docstrings for style consistency.
 PYTHONPATH=$PYTHONPATH:$(pwd)/third_party/docstringchecker \
-  pylint --reports=n "$SOURCE_DIR" "$TEST_DIR"
+  pylint --reports=n --rcfile=.pylintrc "$SOURCE_DIR" "$TEST_DIR"
