@@ -1,7 +1,6 @@
-astroid==1.6.5
 mock
 pyflakes==2.0.0
-# We use pylint exclusively to run the DocStringChecker linter and that linter
-# expects pre-1.5.0 pylint syntax.
-pylint==1.5.0
+# DocStringChecker currently only works with pylint 1.6.5. Upgrading causes it
+# to stop producing errors on bad docstrings.
+pylint==1.6.5
 yapf==0.25.0
